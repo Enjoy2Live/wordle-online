@@ -1,8 +1,9 @@
-import { useState } from "react";
-
-const Row = ({ children }) => {
-  const [word, setWord] = useState();
-  return <div className="flex gap-5">{children}</div>;
+const Row = ({ children, className, ...props }) => {
+  return (
+    <div className={`flex gap-5 lg:gap-8 ${className}`} {...props}>
+      {children}
+    </div>
+  );
 };
 
 export default Row;
