@@ -2,7 +2,7 @@ name: Build and publish game to published branch
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   publish:
     runs-on: ubuntu-latest
